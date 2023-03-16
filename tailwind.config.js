@@ -14,8 +14,18 @@ module.exports = {
     extend: {
       animation: {
         blob: "blob 10s infinite",
+        spain: "spain 7.3s linear 0s infinite",
       },
       keyframes: {
+        spain: {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(359deg)",
+          },
+        },
+
         blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",

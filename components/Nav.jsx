@@ -3,6 +3,7 @@ import Link from "next/link";
 import { AiOutlineFolderOpen, AiOutlineFolder } from "react-icons/ai";
 import { CgNotes } from "react-icons/cg";
 import { FaRegSnowflake } from "react-icons/fa";
+import { GiWorld } from "react-icons/gi";
 
 const Nav = () => {
   return (
