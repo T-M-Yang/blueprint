@@ -1,12 +1,15 @@
 import React from "react";
 import Nav from "../components/Nav";
+import Selfie from "@/components/Selfie";
+import BackGround from "./BackGround";
 
 const Mobile = () => {
   return (
-    <section className="grid h-screen xs:w-2/3 xs:min-h-2/3 xs:max-h-10">
-      <div className=" bg-slate-800/50 backdrop-blur-sm">
+    <section>
+      <BackGround>
+        <Selfie />
         <Nav />
-      </div>
+      </BackGround>
     </section>
   );
 };
