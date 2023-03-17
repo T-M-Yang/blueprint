@@ -1,18 +1,20 @@
 import React from "react";
+import Nav from "@/components/Nav";
 
 const BackGround = ({ children }) => {
   return (
-    <div className="max-h-screen overflow-hidden max-w-screen">
-      <div className="bg-slate-900/90 backdrop-blur-3xl">
-        <div className="flex items-center justify-center">
+    <div className="">
+      <Nav />
+      <div className="bg-slate-500/10 backdrop-blur-2xl">
+        <div className="">
           <div className="blur-3xl">
-            <div className="absolute rounded-full opacity-40 w-[2000px] h-[2000px] top-15 blur-lg mix-blend-multiply -left-4 bg-violet-700 animate-blob"></div>
-            <div className="absolute rounded-full opacity-40 w-[2000px] h-[2000px] top-20 mix-blend-multiply left-4 blur-lg bg-sky-700 animation-delay-3 animate-blob"></div>
-            <div className="absolute bg-pink-700 rounded-full opacity-40 w-[2000px] h-[2000px] mix-blend-multiply top-13 left-20 blur-lg animation-delay-6 animate-blob"></div>
-            <div className="absolute top-0 bg-green-700 rounded-full opacity-40 w-[2000px] h-[2000px] mix-blend-multiply left-15 blur-lg animation-delay-9 animate-blob"></div>
-            <div className="absolute rounded-full opacity-40 w-[2000px] h-[2000px] top-15 blur-lg mix-blend-multiply -left-4 bg-violet-700 animate-blob animation-delay-11"></div>
+            <div className="fixed rounded-full w-96 h-96 opacity-40 top-15 blur-md mix-blend-multiply -left-4 bg-violet-700 animate-blob "></div>
+            <div className="fixed rounded-full w-96 h-96 opacity-40 top-20 mix-blend-multiply left-4 blur-md bg-sky-700 animation-delay-3 animate-blob"></div>
+            <div className="fixed bg-pink-700 rounded-full w-96 h-96 opacity-40 mix-blend-multiply top-13 left-20 blur-md animation-delay-6 animate-blob"></div>
+            <div className="fixed top-0 bg-green-700 rounded-full w-96 h-96 opacity-40 mix-blend-multiply left-15 blur-md animation-delay-9 animate-blob"></div>
+            <div className="fixed bg-yellow-700 rounded-full bottom-15 w-96 h-96 opacity-40 blur-md mix-blend-multiply left-4 animate-blob animation-delay-11"></div>
+            <div className="fixed bg-indigo-500 rounded-full -top-15 w-96 h-96 opacity-40 blur-md mix-blend-multiply left-4 animate-blob animation-delay-13"></div>
           </div>
-
           {children}
         </div>
       </div>

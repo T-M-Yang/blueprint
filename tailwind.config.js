@@ -13,11 +13,12 @@ module.exports = {
     },
     extend: {
       animation: {
-        blob: "blob 20s linear infinite",
+        blob: "blob 15s linear infinite",
         spain: "spain 23s linear 0s infinite",
         spainSlow: "spain 20s linear 0s infinite",
         spainMedium: "spain 17s linear 0s infinite",
         spainFast: "spain 15s linear 0s infinite",
+        fluid: "fluid 10s ease infinite",
       },
 
       keyframes: {
@@ -25,11 +26,14 @@ module.exports = {
           "0%": {
             transform: "translate(0%, 0%) ",
           },
-          "100%": {
-            transform: "translate(-100%, -100%) ",
+          "33%": {
+            transform: "translate(300%, 50%) ",
           },
-          "0%": {
-            transform: "translate(100%, 100%) ",
+          "66%": {
+            transform: "translate(-100%, -150%) ",
+          },
+          "100%": {
+            transform: "translate(0%, 0%) ",
           },
         },
         spain: {
@@ -38,6 +42,17 @@ module.exports = {
           },
           to: {
             transform: "rotate(359deg)",
+          },
+        },
+        fluid: {
+          "0%": {
+            backgroundPosition: "0 0%",
+          },
+          "50%": {
+            backgroundPosition: "300% 50%",
+          },
+          "100%": {
+            backgroundPosition: "0 50%",
           },
         },
       },

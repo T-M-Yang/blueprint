@@ -15,12 +15,37 @@
   .animation-delay-11 {
     animation-delay: 11s;
   }
+  .animation-delay-13 {
+    animation-delay: 13s;
+  }
 }
 
 @layer components {
   .orbit {
-    @apply relative flex justify-center items-center border border-slate-300/50 rounded-full
+    @apply relative flex justify-center items-center border border-white/50 rounded-full
+  }
+  .bg-linear {
+    @apply bg-gradient-to-t from-violet-800 via-sky-900 to-slate-800  bg-[400%_400%] 
   }
   
 }
 
+.bgLinear {
+  background: linear-gradient(-45deg, rgb(100, 66, 157), rgb(203, 91, 122), rgb(36, 130, 99), rgb(38, 57, 133));
+  background-size: 400% 400%;
+  animation: f 15s ease-in-out infinite;
+}
+
+
+
+@keyframes f {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
