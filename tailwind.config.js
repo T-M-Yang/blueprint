@@ -13,10 +13,12 @@ module.exports = {
     },
     extend: {
       animation: {
+        blob: "blob 7s infinite",
         bubble: "bubble 7s infinite",
+        fluid: "fluid 15s ease infinite",
       },
       keyframes: {
-        bubble: {
+        blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",
           },
@@ -30,9 +32,33 @@ module.exports = {
             transform: "translate(0px, 0px) scale(1)",
           },
         },
+        bubble: {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "33%": {
+            transform: " scale(1.1)",
+          },
+          "66%": {
+            transform: "scale(0.8)",
+          },
+          "100%": {
+            transform: "scale(1)",
+          },
+        },
+        fluid: {
+          "0%": {
+            backgroundPosition: "0 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+          "100%": {
+            backgroundPosition: "0 50%",
+          },
+        },
       },
     },
-    extend: {},
     plugins: [],
   },
 };

@@ -7,7 +7,8 @@ const Mobile = () => {
   return (
     <section
       className="xs:w-[350px]  max-h-min xs:rounded-lg grid  
-                        bg-gradient-to-tl from-neutral-400 via-blue-300 to-yellow-600
+                         [background-size:400% 400%] 
+                        bg-animate
                         "
     >
       <BackGround>
