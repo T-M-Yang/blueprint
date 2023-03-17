@@ -5,12 +5,7 @@ import BackGround from "@/components/BackGround";
 
 const Mobile = () => {
   return (
-    <section
-      className="xs:w-[350px]  max-h-min xs:rounded-lg grid  
-                         [background-size:400% 400%] 
-                        bg-animate
-                        "
-    >
+    <section className="h-screen max-w-screen bg-gradient-to-tl from-slate-800 via-slate-500 to-slate-400 ">
       <BackGround>
         <Selfie />
         <Nav />

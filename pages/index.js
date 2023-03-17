@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="grid bg-blue-800 xs:grid xs:min-h-screen xs:place-items-center">
+      <main className="">
         <Mobile />
       </main>
     </>

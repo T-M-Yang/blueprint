@@ -13,48 +13,31 @@ module.exports = {
     },
     extend: {
       animation: {
-        blob: "blob 7s infinite",
-        bubble: "bubble 7s infinite",
-        fluid: "fluid 15s ease infinite",
+        blob: "blob 20s linear infinite",
+        spain: "spain 23s linear 0s infinite",
+        spainSlow: "spain 20s linear 0s infinite",
+        spainMedium: "spain 17s linear 0s infinite",
+        spainFast: "spain 15s linear 0s infinite",
       },
+
       keyframes: {
         blob: {
           "0%": {
-            transform: "translate(0px, 0px) scale(1)",
-          },
-          "33%": {
-            transform: "translate(30px, -50px) scale(1.1)",
-          },
-          "66%": {
-            transform: "translate(50px, -20px) scale(0.8)",
+            transform: "translate(0%, 0%) ",
           },
           "100%": {
-            transform: "translate(0px, 0px) scale(1)",
+            transform: "translate(-100%, -100%) ",
+          },
+          "0%": {
+            transform: "translate(100%, 100%) ",
           },
         },
-        bubble: {
-          "0%": {
-            transform: "scale(1)",
+        spain: {
+          from: {
+            transform: "rotate(0deg)",
           },
-          "33%": {
-            transform: " scale(1.1)",
-          },
-          "66%": {
-            transform: "scale(0.8)",
-          },
-          "100%": {
-            transform: "scale(1)",
-          },
-        },
-        fluid: {
-          "0%": {
-            backgroundPosition: "0 50%",
-          },
-          "50%": {
-            backgroundPosition: "100% 50%",
-          },
-          "100%": {
-            backgroundPosition: "0 50%",
+          to: {
+            transform: "rotate(359deg)",
           },
         },
       },
