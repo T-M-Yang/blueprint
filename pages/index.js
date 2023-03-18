@@ -14,7 +14,6 @@ export default function Home() {
       </Head>
       <main className="grid min-h-screen max-w-screen">
         <WebSystem />
-
         <Bio />
       </main>
     </>

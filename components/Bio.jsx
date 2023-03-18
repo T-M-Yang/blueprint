@@ -2,11 +2,12 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FaQuestion } from "react-icons/fa";
+import TimeLine from "./TimeLine";
 
 const Bio = () => {
   const [isQuestionClicked, setIsQuestionClicked] = useState(false);
   return (
-    <section className="p-7 max-w-screen snap-y">
+    <section className="p-7 max-w-screen snap-y snap-mandatory">
       <div className="grid min-h-screen snap-center">
         <h1 className="self-end tracking-wider uppercase text-7xl">
           Welcome to my space
@@ -22,13 +23,13 @@ const Bio = () => {
         </p>
       </div>
 
-      <article className="grid min-h-screen place-content-center snap-center">
+      <article className="grid min-h-screen text-xl place-content-center snap-center">
         <div className="space-y-6">
           <p className="">
-            I was born in Shanghai , grow up in Macau and currently living in{" "}
-            Taiwan
+            I was born in Shanghai , grow up in Macau and currently living in
+            Taiwan.
           </p>
-          <div className="absolute float-left h-[200px] w-[200px] bg-gradient-to-br from-indigo-700/70 to-teal-700 rounded-full blur-md animate-spainMedium"></div>
+          <div className="absolute float-left h-[200px] w-[200px] bg-gradient-to-br from-indigo-700/70 to-teal-700 rounded-full blur-md animate-spainMedium "></div>
           <div className="relative">
             <Image
               src="/selfie.png"
@@ -63,6 +64,7 @@ const Bio = () => {
           </p>
         </div>
       </article>
+      <TimeLine />
     </section>
   );
 };

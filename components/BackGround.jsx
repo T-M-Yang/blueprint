@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 const BackGround = ({ children }) => {
   return (
@@ -18,6 +19,7 @@ const BackGround = ({ children }) => {
           {children}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
