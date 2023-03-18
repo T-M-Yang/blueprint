@@ -13,12 +13,12 @@ module.exports = {
     },
     extend: {
       animation: {
-        blob: "blob 15s linear infinite",
-        spain: "spain 23s linear 0s infinite",
-        spainSlow: "spain 20s linear 0s infinite",
+        // blob: "blob 15s linear infinite",
+        // spain: "spain 23s linear 0s infinite",
+        // spainSlow: "spain 20s linear 0s infinite",
         spainMedium: "spain 17s linear 0s infinite",
-        spainFast: "spain 15s linear 0s infinite",
-        fluid: "fluid 10s ease infinite",
+        // spainFast: "spain 15s linear 0s infinite",
+        // fluid: "fluid 10s ease infinite",
       },
 
       keyframes: {

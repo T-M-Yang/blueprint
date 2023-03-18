@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import WebSystem from "@/components/WebSystem";
+import Bio from "../components/Bio";
 
 export default function Home() {
   return (
@@ -11,8 +12,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="grid min-h-screen max-w-screen ">
+      <main className="grid min-h-screen max-w-screen">
         <WebSystem />
+
+        <Bio />
       </main>
     </>
   );

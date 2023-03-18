@@ -5,11 +5,21 @@ import { SiJavascript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { TbWorldWww } from "react-icons/tb";
 import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3Full } from "react-icons/di";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 const WebSystem = () => {
   return (
-    <div className="w-full min-h-screen">
+    <motion.div
+      className="w-full min-h-screen"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 1.5,
+        delay: 0.7,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+    >
       <div className="flex justify-center w-full h-full bg-transparent">
         <div className="flex items-center justify-center w-full h-full web-system ">
           <div className="w-96 next-orbit orbit h-96 animate-spainFast">
@@ -70,7 +80,7 @@ const WebSystem = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

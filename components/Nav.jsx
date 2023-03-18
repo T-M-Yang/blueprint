@@ -4,10 +4,22 @@ import { AiOutlineFolderOpen, AiOutlineFolder } from "react-icons/ai";
 import { CgNotes } from "react-icons/cg";
 import { FaRegSnowflake } from "react-icons/fa";
 import { GiWorld } from "react-icons/gi";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  useEffect(() => {
+    const handleRounteChane = () => {
+      setIsOpen(false);
+    };
+    router.events.on("routeChangeComplete", handleRounteChane);
+    return () => {
+      router.events.off("routeChangeComplete", handleRounteChane);
+    };
+  }, [router.events]);
+
   return (
     <nav className="fixed bottom-0 z-50 w-full">
       <div className="grid place-content-center">
@@ -16,12 +28,9 @@ const Nav = () => {
             <div
               className={`${
                 isOpen ? "opacity-70" : "opacity-0"
-              } absolute text-xs duration-200 opacity-0  -top-10`}
+              } absolute text-xs duration-300 opacity-0  -top-[17px]`}
             >
-              <ul className="flex flex-col underline gap-y-1">
-                <li>
-                  <Link href="/Bio">Bio</Link>
-                </li>
+              <ul className="flex flex-col underline">
                 <li>
                   <Link href="/Projects">Projects</Link>
                 </li>
