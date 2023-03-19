@@ -13,11 +13,14 @@ module.exports = {
     },
     extend: {
       animation: {
-        // blob: "blob 15s linear infinite",
-        // spain: "spain 23s linear 0s infinite",
-        // spainSlow: "spain 20s linear 0s infinite",
-        spainMedium: "spain 17s linear 0s infinite",
-        // spainFast: "spain 15s linear 0s infinite",
+        blob: "blob 15s linear infinite",
+        spain: "spain 60s linear 0s infinite",
+        spainSlow: "spain 53s linear 0s infinite",
+        spainMedium: "spain 43s linear 0s infinite",
+        spainFast: "spain 33s linear 0s infinite",
+        spainXFast: "spain 3s linear 0s infinite",
+        spainXSFast: "spain 9s linear 0s infinite",
+
         // fluid: "fluid 10s ease infinite",
       },
 

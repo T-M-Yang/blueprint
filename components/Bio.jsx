@@ -9,7 +9,10 @@ const Bio = () => {
   return (
     <section className="p-7 max-w-screen snap-y snap-mandatory">
       <div className="grid min-h-screen snap-center">
-        <h1 className="self-end tracking-wider uppercase text-7xl">
+        <h1
+          className="self-end tracking-wider uppercase text-7xl"
+          style={{ filter: "drop-shadow(0 0 10px)" }}
+        >
           Welcome to my space
         </h1>
         <p className="mt-6 text-3xl row-s">

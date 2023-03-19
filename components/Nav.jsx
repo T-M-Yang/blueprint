@@ -25,11 +25,11 @@ const Nav = () => {
 
   return (
     <nav className="fixed bottom-0 z-50 w-full duration-300">
-      <div className="grid py-3 place-content-center">
+      <div className="grid py-3 place-content-center ">
         <ul
           className={`${
             isScrolling
-              ? "bg-slate-700/70 backdrop-blur-xl shadow-2xl shadow-slate-800"
+              ? "bg-slate-500/30 backdrop-blur-2xl shadow-2xl shadow-slate-800"
               : ""
           } flex items-center justify-center gap-5  text-3xl text-slate-200 p-3 rounded-3xl duration-300 `}
         >
@@ -37,25 +37,21 @@ const Nav = () => {
             <div
               className={`${
                 isOpen ? "opacity-100" : "opacity-0"
-              } absolute w-40 bg-slate-800 z-20 backdrop-blur-3xl text-xs duration-300 opacity-0  -top-[36px]`}
+              } absolute w-fit bg-slate-500/90 rounded-md p-1 z-20 backdrop-blur-3xl text-xs duration-300 opacity-0  -top-[45px]`}
             >
               <ul className="flex flex-col space-y-1 text-white underline">
                 <li className="group/blog">
                   <Link href="/Blog">
-                    A{" "}
-                    <span className="italic transition-all duration-200 group-hover/blog:text-indigo-700">
-                      blog
-                    </span>{" "}
-                    site for my friend
+                    <span className="italic transition-all duration-200 group-hover/blog:text-indigo-400">
+                      Blog
+                    </span>
                   </Link>
                 </li>
                 <li className="group/portfolio">
                   <Link href="/Portfolio">
-                    A{" "}
-                    <span className="italic transition-all duration-200 group-hover/portfolio:text-indigo-700">
+                    <span className="italic transition-all duration-200 group-hover/portfolio:text-indigo-400">
                       Portfolio
-                    </span>{" "}
-                    site for my dad
+                    </span>
                   </Link>
                 </li>
               </ul>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  .animation-delay-3{
+  .animation-delay-3 {
     animation-delay: 3s;
   }
   .animation-delay-6 {
@@ -22,21 +22,24 @@
 
 @layer components {
   .orbit {
-    @apply relative flex justify-center items-center border border-white/50 rounded-full
+    @apply relative flex justify-center items-center border border-dotted border-white/20 rounded-full;
   }
   .bg-linear {
-    @apply bg-gradient-to-t from-violet-800 via-sky-900 to-slate-800  bg-[400%_400%] 
+    @apply bg-gradient-to-t from-violet-800 via-sky-900 to-slate-800  bg-[400%_400%];
   }
-  
 }
 
 .bgLinear {
-  background: linear-gradient(-45deg, rgb(100, 66, 157), rgb(203, 91, 122), rgb(36, 130, 99), rgb(38, 57, 133));
+  background: linear-gradient(
+    -45deg,
+    rgb(100, 66, 157),
+    rgb(203, 91, 122),
+    rgb(36, 130, 99),
+    rgb(38, 57, 133)
+  );
   background-size: 400% 400%;
   animation: f 15s ease-in-out infinite;
 }
-
-
 
 @keyframes f {
   0% {
