@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 
 const BackGround = ({ children }) => {
   return (
-    <div className="">
+    <div className="overflow-x-hidden ">
       <Nav />
-      <div className="bg-slate-900 backdrop-blur-2xl text-slate-300">
+      <div className="bg-slate-900 backdrop-blur-2xl text-slate-300 ">
         <div className="">
           <div className="blur-3xl">
             <div className="fixed rounded-full w-96 h-96 opacity-40 top-15 blur-md mix-blend-multiply -left-4 bg-violet-700 animate-blob "></div>

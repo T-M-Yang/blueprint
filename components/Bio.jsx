@@ -44,7 +44,7 @@ const Bio = () => {
           </div>
 
           <span
-            className="absolute text-2xl duration-300 -translate-x-20 translate-y-4 cursor-pointer text-indigo-700/70 hover:rotate-[20deg] hover:text-4xl hover:text-indigo-700"
+            className="absolute text-2xl hover:-translate-y-0.5 duration-300 -translate-x-20 translate-y-4 cursor-pointer text-indigo-700/70 hover:rotate-[20deg] hover:text-4xl hover:text-indigo-700"
             onClick={() => setIsQuestionClicked(!isQuestionClicked)}
           >
             <FaQuestion />

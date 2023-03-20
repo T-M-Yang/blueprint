@@ -37,9 +37,16 @@ const Nav = () => {
             <div
               className={`${
                 isOpen ? "opacity-100" : "opacity-0"
-              } absolute w-fit bg-slate-500/90 rounded-md p-1 z-20 backdrop-blur-3xl text-xs duration-300 opacity-0  -top-[45px]`}
+              } absolute w-fit bg-slate-500/90 rounded-md p-1 z-20 backdrop-blur-3xl text-xs duration-300 opacity-0  -top-[65px]`}
             >
               <ul className="flex flex-col space-y-1 text-white underline">
+                <li className="group/pathable">
+                  <Link href="/Pathable">
+                    <span className="italic transition-all duration-200 group-hover/blog:text-indigo-400">
+                      Pathable
+                    </span>
+                  </Link>
+                </li>
                 <li className="group/blog">
                   <Link href="/Blog">
                     <span className="italic transition-all duration-200 group-hover/blog:text-indigo-400">
