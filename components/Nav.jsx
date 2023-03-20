@@ -37,26 +37,19 @@ const Nav = () => {
             <div
               className={`${
                 isOpen ? "opacity-100" : "opacity-0"
-              } absolute w-fit bg-slate-500/90 rounded-md p-1 z-20 backdrop-blur-3xl text-xs duration-300 opacity-0  -top-[65px]`}
+              } absolute w-fit bg-slate-300/90 rounded-md p-[5px] z-20 backdrop-blur-3xl text-xs duration-300 opacity-0  -top-[45px]`}
             >
-              <ul className="flex flex-col space-y-1 text-white underline">
-                <li className="group/pathable">
-                  <Link href="/Pathable">
-                    <span className="italic transition-all duration-200 group-hover/blog:text-indigo-400">
-                      Pathable
-                    </span>
-                  </Link>
-                </li>
+              <ul className="flex flex-col space-y-1 underline text-slate-900">
                 <li className="group/blog">
                   <Link href="/Blog">
-                    <span className="italic transition-all duration-200 group-hover/blog:text-indigo-400">
+                    <span className="italic transition-all duration-200 group-hover/blog:text-indigo-500">
                       Blog
                     </span>
                   </Link>
                 </li>
                 <li className="group/portfolio">
                   <Link href="/Portfolio">
-                    <span className="italic transition-all duration-200 group-hover/portfolio:text-indigo-400">
+                    <span className="italic transition-all duration-200 group-hover/portfolio:text-indigo-500">
                       Portfolio
                     </span>
                   </Link>
@@ -68,11 +61,11 @@ const Nav = () => {
                 Projects
               </p>
               {isOpen ? (
-                <div className="text-4xl opacity-70">
+                <div className="text-4xl duration-300 opacity-70 hover:opacity-100">
                   <AiOutlineFolderOpen />
                 </div>
               ) : (
-                <div className="text-4xl opacity-70">
+                <div className="text-4xl duration-300 opacity-70 hover:opacity-100">
                   <AiOutlineFolder />
                 </div>
               )}
@@ -83,7 +76,7 @@ const Nav = () => {
               <p className="absolute text-xs duration-200 opacity-0 -top-5 group-hover:opacity-70">
                 Home
               </p>
-              <FaRegSnowflake className="opacity-70" />
+              <FaRegSnowflake className="duration-300 opacity-70 hover:opacity-100" />
             </Link>
           </li>
           <li className="relative group">
@@ -91,7 +84,7 @@ const Nav = () => {
               <p className="absolute text-xs duration-200 opacity-0 group-hover:opacity-70 -top-5">
                 Notes
               </p>
-              <CgNotes className="opacity-70" />
+              <CgNotes className="duration-300 opacity-70 hover:opacity-100" />
             </Link>
           </li>
         </ul>
