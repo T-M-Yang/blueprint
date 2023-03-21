@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import BackGround from "@/components/BackGround";
 import { Noto_Sans_TC } from "next/font/google";
+import { appWithTranslation } from "next-i18next";
 
 const noto = Noto_Sans_TC({
   subset: ["zh"],
@@ -9,7 +10,7 @@ const noto = Noto_Sans_TC({
   preload: false,
 });
 
-export default function App({ Component, pageProps, children }) {
+function App({ Component, pageProps, children }) {
   return (
     <BackGround>
       <div className={`${noto.variable} font-zh`}>
@@ -18,3 +19,5 @@ export default function App({ Component, pageProps, children }) {
     </BackGround>
   );
 }
+
+export default appWithTranslation(App);
