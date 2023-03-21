@@ -5,7 +5,7 @@ import { CgNotes } from "react-icons/cg";
 import { FaRegSnowflake } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import { useScrollDetect } from "../pages/hooks";
+import { useScrollDetect } from "./hooks";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
