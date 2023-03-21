@@ -21,7 +21,7 @@ const Bio = ({ useTranslation }) => {
             {" "}
             Snow
           </span>
-          <span>。</span>
+          <span>.</span>
         </p>
       </div>
 
@@ -47,24 +47,21 @@ const Bio = ({ useTranslation }) => {
           <p
             className={`${
               isQuestionClicked ? "block" : "hidden"
-            } w-32 p-2 absolute duration-300 text-xs -translate-y-[60px] translate-x-[160px]  rounded-2xl bg-slate-700/90 backdrop-blur-3xl`}
+            } w-32 p-2 absolute duration-300 text-xs -translate-y-[60px] translate-x-[160px]  rounded-2xl bg-slate-700 `}
           >
-            因為我實在太喜歡雪了，所以我把英文名字改成了Snow。
+            {useTranslation("Bio:whySnow")}
           </p>
 
           <p className="mr-3 text-lg leading-10 tracking-wider">
-            <span style={{ filter: "drop-shadow(0 0 10px)" }}>
-              編程改變了我的人生。
-            </span>
-            身為一名從小就不擅長數學的文科生，我一直以為編程不可能與自己有所交集。但是就在2022年3月13號那一天，我不知道是那一根筋不對，第一次在VScode中用HTML敲下了
-            <code className="bg-slate-700">
+            {useTranslation("Bio:bioStart")}
+            <code className="bg-indigo-500/70">
               &lt;h1&gt;Hello World!&lt;/h1&gt;
             </code>
-            後，我發現自己踏進了新世界的大門，一去不復返。
+            {useTranslation("Bio:bioEnd")}
           </p>
         </div>
       </article>
-      <TimeLine />
+      <TimeLine useTranslation={useTranslation} />
     </section>
   );
 };
