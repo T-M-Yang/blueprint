@@ -42,7 +42,10 @@ const ShowCase = ({
         </motion.div>
       </div>
       <div className="grid min-h-screen px-7 place-content-center md:col-start-1 gap-y-7">
-        <h1 colSpan={2} className="p-3 text-5xl text-left text-slate-100">
+        <h1
+          colSpan={2}
+          className="p-3 text-5xl leading-tight text-left text-slate-100"
+        >
           {title}
         </h1>
         <table className="rounded-md table-fixed ">

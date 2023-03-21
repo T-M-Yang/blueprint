@@ -12,6 +12,9 @@ module.exports = {
       ...defaultTheme.screens,
     },
     extend: {
+      fontFamily: {
+        zh: ["var(--font-zh)"],
+      },
       animation: {
         // blob: "blob 15s linear infinite",
         // spain: "spain 60s linear 0s infinite",

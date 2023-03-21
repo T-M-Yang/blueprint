@@ -7,44 +7,39 @@ import TimeLine from "./TimeLine";
 const Bio = () => {
   const [isQuestionClicked, setIsQuestionClicked] = useState(false);
   return (
-    <section className="p-7 max-w-screen snap-y snap-mandatory">
-      <div className="grid min-h-screen snap-center">
+    <section className="tracking-wide p-7 max-w-screen snap-y snap-mandatory">
+      <div className="grid min-h-screen space-y-12 snap-center">
         <h1
           className="self-end tracking-wider uppercase text-7xl"
           style={{ filter: "drop-shadow(0 0 10px)" }}
         >
-          Welcome to my space
+          歡迎來到我的世界。
         </h1>
-        <p className="mt-6 text-3xl row-s">
-          My name is TieMing Yang, a self-taught Front-end Developer, you can
-          call me
+        <p className="text-3xl row-s">
+          我叫楊鐵銘，一名自學的前端開發者。你可以叫我
           <span className="italic underline cursor-pointer underline-offset-8">
             {" "}
             Snow
           </span>
-          <span>.</span>
+          <span>。</span>
         </p>
       </div>
 
-      <article className="grid min-h-screen text-xl place-content-center snap-center">
+      <article className="grid min-h-screen text-xl md:mx-auto md:max-w-xl place-content-center snap-center">
         <div className="space-y-6">
-          <p className="">
-            I was born in Shanghai , grow up in Macau and currently living in
-            Taiwan.
-          </p>
-          <div className="absolute float-left h-[200px] w-[200px] bg-gradient-to-br from-indigo-700/70 to-teal-700 rounded-full blur-md animate-spainMedium "></div>
+          <div className="absolute float-left translate-y-5 h-[200px] w-[200px] bg-gradient-to-br from-indigo-700/70 to-teal-700 rounded-full blur-md animate-spainMedium "></div>
           <div className="relative">
             <Image
               src="/selfie.png"
               width={200}
               height={200}
               alt="Me at Sapporo, Hokkaido, Japan"
-              className="float-left object-cover object-center aspect-[1/1] rounded-full [shape-outside:circle()] mr-6"
+              className="float-left object-cover object-center aspect-[1/1] rounded-full [shape-outside:circle()] mr-8"
             />
           </div>
 
           <span
-            className="absolute text-2xl hover:-translate-y-0.5 duration-300 -translate-x-20 translate-y-4 cursor-pointer text-indigo-700/70 hover:rotate-[20deg] hover:text-4xl hover:text-indigo-700"
+            className="absolute text-2xl hover:-translate-y-0.5 duration-300 -translate-x-20 translate-y-4 cursor-pointer text-indigo-500 hover:rotate-[20deg] hover:text-4xl hover:text-indigo-700"
             onClick={() => setIsQuestionClicked(!isQuestionClicked)}
           >
             <FaQuestion />
@@ -52,18 +47,17 @@ const Bio = () => {
           <p
             className={`${
               isQuestionClicked ? "block" : "hidden"
-            } w-32 p-2 absolute duration-300 text-xs -translate-y-[60px] translate-x-[160px]  rounded-2xl bg-slate-700/90 backdrop-blur-3xl `}
+            } w-32 p-2 absolute duration-300 text-xs -translate-y-[60px] translate-x-[160px]  rounded-2xl bg-slate-700/90 backdrop-blur-3xl`}
           >
-            I like snow too much, so I changed my English name to Snow.
+            因為我實在太喜歡雪了，所以我把英文名字改成了Snow。
           </p>
 
-          <p className="">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque
-            magni sed iure fugiat sit maxime dicta optio culpa et maiores
-            consectetur, aspernatur tenetur inventore, nemo aut veniam vitae
-            sunt. Ea necessitatibus voluptates omnis atque nam quod, voluptatum
-            iusto repudiandae unde mollitia odio. Ut in mollitia enim, labore
-            inventore dolorem nobis?
+          <p className="mr-3">
+            編程改變了我的人生。身為一名從小就不擅長數學的文科生，我一直以為編程不可能與自己有所交集。但是就在2022年3月13號那一天，我不知道是那一根筋不對，第一次在VScode中用HTML敲下了
+            <code className="bg-slate-700">
+              &lt;h1&gt;Hello World!&lt;/h1&gt;
+            </code>
+            後，我發現自己踏進了新世界的大門，一去不復返。
           </p>
         </div>
       </article>

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { AiOutlineFolderOpen, AiOutlineFolder } from "react-icons/ai";
 import { CgNotes } from "react-icons/cg";
 import { FaRegSnowflake } from "react-icons/fa";
-import { GiWorld } from "react-icons/gi";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { useScrollDetect } from "../pages/hooks";
@@ -24,7 +23,7 @@ const Nav = () => {
   }, [router.events]);
 
   return (
-    <nav className="fixed bottom-0 z-50 w-full duration-300">
+    <nav className="fixed bottom-0 z-50 w-full duration-300 ">
       <div className="grid py-3 place-content-center ">
         <ul
           className={`${
@@ -42,7 +41,7 @@ const Nav = () => {
               <ul className="flex flex-col space-y-1 underline text-slate-900">
                 <li className="group/blog">
                   <Link href="/Blog">
-                    <span className="italic transition-all duration-200 group-hover/blog:text-indigo-500">
+                    <span className="italic transition-all duration-200 group-hover/blog:text-indigo-500 ">
                       Blog
                     </span>
                   </Link>
@@ -80,12 +79,14 @@ const Nav = () => {
             </Link>
           </li>
           <li className="relative group">
-            <Link href="/Notes">
-              <p className="absolute text-xs duration-200 opacity-0 group-hover:opacity-70 -top-5">
-                Notes
-              </p>
-              <CgNotes className="duration-300 opacity-70 hover:opacity-100" />
-            </Link>
+            <button
+              className="absolute w-32 text-xs text-left duration-200 opacity-0 group-hover:opacity-70 -top-5"
+              disable={true}
+            >
+              Notes -{" "}
+              <span className="italic font-sm text-slate-600">Developing</span>
+            </button>
+            <CgNotes className="duration-300 cursor-not-allowed opacity-70 hover:opacity-100" />
           </li>
         </ul>
       </div>

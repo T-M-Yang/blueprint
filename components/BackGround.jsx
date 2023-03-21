@@ -16,7 +16,7 @@ const BackGround = ({ children }) => {
             <div className="fixed bg-yellow-700 rounded-full bottom-15 w-96 h-96 opacity-40 blur-md mix-blend-multiply left-4 animate-blob animation-delay-11"></div>
             <div className="fixed bg-indigo-500 rounded-full -top-15 w-96 h-96 opacity-40 blur-md mix-blend-multiply left-4 animate-blob animation-delay-13"></div>
           </div>
-          {children}
+          <div className="max-w-5xl mx-auto">{children}</div>
         </div>
       </div>
       <Footer />

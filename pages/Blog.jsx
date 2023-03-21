@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <ShowCase
       src="https://wynns.vercel.app/"
-      title="A Blog site that I build for my Malaysian friend"
+      title="A Blog site that I built for my Malaysian friend"
       ui="React.js"
       metaFramework="Next.js"
       cms="Sanity"
