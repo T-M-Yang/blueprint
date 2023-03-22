@@ -24,13 +24,13 @@ const Nav = () => {
 
   return (
     <nav className="fixed bottom-0 z-50 w-full duration-300 ">
-      <div className="grid py-3 place-content-center ">
+      <div className="grid py-3 2xl:grid-cols-3 2xl:place-items-center place-content-center 2xl:h-screen ">
         <ul
           className={`${
             isScrolling
               ? "bg-slate-500/30 backdrop-blur-2xl shadow-2xl shadow-slate-800"
               : ""
-          } flex items-center justify-center gap-5  text-3xl text-slate-200 p-3 rounded-3xl duration-300 `}
+          } flex 2xl:flex-col 2xl:col-start-3 2xl:w-fit items-center justify-center gap-5  text-3xl text-slate-200 p-3 rounded-3xl duration-300 `}
         >
           <li className="relative group">
             <div
