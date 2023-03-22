@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Snow Yang&apo;s portfolio</title>
+        <title>Snow Yang's portfolio</title>
         <meta name="description" content="Snow Yang's Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
