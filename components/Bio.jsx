@@ -27,14 +27,16 @@ const Bio = ({ useTranslation }) => {
 
       <article className="grid min-h-screen md:mx-auto md:max-w-xl place-content-center snap-center">
         <div className="space-y-6">
-          <div className="absolute float-left translate-y-5 h-[200px] w-[200px] bg-gradient-to-br from-indigo-700/70 to-teal-700 rounded-full blur-md animate-spainMedium "></div>
+          <div className="-translate-x-[5px] translate-y-[18px]">
+            <div className="absolute h-[210px] w-[210px] bg-gradient-to-br from-indigo-700/70 to-teal-700 rounded-full blur-sm animate-spainXFast "></div>
+          </div>
           <div className="relative">
             <Image
               src="/selfie.png"
               width={200}
               height={200}
               alt="Me at Sapporo, Hokkaido, Japan"
-              className="float-left object-cover object-center aspect-[1/1] rounded-full [shape-outside:circle()] mr-8"
+              className=" float-left object-cover object-center aspect-[1/1] rounded-full [shape-outside:circle()] mr-8"
             />
           </div>
 
