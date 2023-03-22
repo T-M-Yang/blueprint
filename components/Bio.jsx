@@ -39,7 +39,7 @@ const Bio = ({ useTranslation }) => {
           </div>
 
           <span
-            className="absolute text-2xl hover:-translate-y-0.5 duration-300 -translate-x-20 translate-y-4 cursor-pointer text-indigo-500 hover:rotate-[20deg] hover:text-4xl hover:text-indigo-700"
+            className="absolute text-2xl hover:-translate-y-[1px] duration-300 -translate-x-20 translate-y-4 cursor-pointer text-indigo-500 hover:rotate-[20deg] hover:text-4xl hover:text-indigo-700"
             onClick={() => setIsQuestionClicked(!isQuestionClicked)}
           >
             <FaQuestion />
@@ -47,7 +47,7 @@ const Bio = ({ useTranslation }) => {
           <p
             className={`${
               isQuestionClicked ? "block" : "hidden"
-            } w-32 p-2 absolute duration-300 text-xs -translate-y-[60px] translate-x-[160px]  rounded-2xl bg-slate-700 `}
+            } w-32 p-2 absolute duration-300 text-xs -translate-y-[90px] translate-x-[160px]  rounded-2xl bg-slate-700 `}
           >
             {useTranslation("Bio:whySnow")}
           </p>
