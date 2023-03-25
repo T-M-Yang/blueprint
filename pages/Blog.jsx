@@ -9,7 +9,7 @@ const Blog = () => {
       ui="React.js"
       metaFramework="Next.js"
       cms="Sanity"
-      css="Tailwind.css"
+      css="Tailwind CSS"
       hasCMS={true}
       cloudPlatform="Vercel"
     />

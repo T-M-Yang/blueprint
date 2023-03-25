@@ -4,10 +4,11 @@ import { IoSchoolOutline } from "react-icons/io5";
 import { FaFreeCodeCamp } from "react-icons/fa";
 import { BsFilm } from "react-icons/bs";
 import { CgInfinity } from "react-icons/cg";
+import Link from "next/link";
 
 const TimeLine = ({ useTranslation }) => {
   return (
-    <div className="grid min-h-screen grid-cols-1 py-64 place-items-center place-content-center snap-center mx-w-5xl">
+    <section className="grid min-h-screen grid-cols-1 py-64 place-items-center place-content-center snap-center mx-w-5xl">
       {/* college period */}
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
@@ -155,11 +156,13 @@ const TimeLine = ({ useTranslation }) => {
         }}
         className="grid grid-cols-1 row-start-7 place-items-center"
       >
-        <div className="pt-10 md:text-[300px] text-[200px] cursor-pointer">
-          <CgInfinity style={{ filter: "drop-shadow(0 0 10px)" }} />
+        <div className="pt-10 md:text-[300px] text-[200px] cursor-pointer duration-300 hover:scale-105">
+          <Link href="/">
+            <CgInfinity style={{ filter: "drop-shadow(0 0 10px)" }} />
+          </Link>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

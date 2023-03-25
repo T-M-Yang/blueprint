@@ -10,7 +10,7 @@ const noto = Noto_Sans_TC({
   preload: false,
 });
 
-function App({ Component, pageProps, children }) {
+function App({ Component, pageProps }) {
   return (
     <BackGround>
       <div className={`${noto.variable} font-zh`}>

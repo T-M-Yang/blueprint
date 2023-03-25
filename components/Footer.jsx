@@ -4,7 +4,7 @@ import { FaDev } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="grid py-16 bg-slate-900 text-slate-300 place-content-center">
+    <footer className="grid w-full py-16 bg-slate-900 text-slate-300 place-content-center">
       <div className="grid border-t p-7 gap-y-5 place-items-center">
         <ul className="flex text-xl gap-x-16">
           <il className="duration-300 hover:-translate-y-0.5 hover:text-slate-100">

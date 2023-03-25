@@ -21,9 +21,8 @@ module.exports = {
         spainSlow: "spain 53s linear 0s infinite",
         spainMedium: "spain 43s linear 0s infinite",
         spainFast: "spain 33s linear 0s infinite",
-        spainXFast: "spain 3s linear 0s infinite",
-        spainXSFast: "spain 9s linear 0s infinite",
-        fluid: "fluid 10s ease infinite",
+        spainXFast: "spain 13s linear 0s infinite",
+        spainXLFast: "spain 9s linear 0s infinite",
       },
 
       keyframes: {

@@ -9,7 +9,7 @@ const Portfolio = () => {
       ui="React.js"
       metaFramework="Next.js"
       hasCMS={false}
-      css="Tailwind.css"
+      css="Tailwind CSS"
       cloudPlatform="Vercel"
     />
   );
