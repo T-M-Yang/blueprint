@@ -31,10 +31,10 @@ const ShowCase = ({
             loading="eager"
             style={{ filter: "drop-shadow(0px 0px 5px)" }}
             src={src}
-            className="border-slate-300 scale-[70%] border-[2px] rounded-2xl"
+            className="border-slate-300 scale-[70%] -translate-y-16 md:-translate-y-8 border-[2px] rounded-2xl"
           ></iframe>
           <a
-            className="absolute duration-300 hover:-translate-y-0.5 bottom-20 hover:text-slate-300 text-slate-500"
+            className="absolute  duration-300 hover:-translate-y-0.5 md:bottom-[120px] bottom-36 hover:text-slate-300 text-slate-500"
             href={src}
           >
             {src}

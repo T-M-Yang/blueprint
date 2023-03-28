@@ -27,15 +27,12 @@ const Bio = ({ useTranslation }) => {
         </h1>
         <p className="text-3xl row-s">
           {useTranslation("Bio:intro")}
-          <span className="italic underline cursor-pointer underline-offset-8">
-            {" "}
-            Snow
-          </span>
+          <span className="italic underline underline-offset-8"> Snow</span>
           <span>.</span>
         </p>
       </motion.div>
 
-      <article className="grid min-h-screen md:mx-auto md:max-w-xl place-content-center snap-center">
+      <article className="relative grid min-h-screen md:mx-auto md:max-w-xl place-content-center snap-center">
         <div className="space-y-6">
           <div className="-translate-x-[5px] translate-y-[18px]">
             <div className="absolute h-[210px] w-[210px] bg-gradient-to-br from-indigo-700/70 to-teal-700 rounded-full blur-sm animate-spainXFast "></div>
@@ -49,17 +46,16 @@ const Bio = ({ useTranslation }) => {
               className=" float-left object-cover object-center aspect-[1/1] rounded-full [shape-outside:circle()] mr-8"
             />
           </div>
-
-          <span
-            className="absolute text-2xl hover:-translate-y-[1px] duration-300 -translate-x-20 translate-y-4 cursor-pointer text-indigo-100 hover:rotate-[20deg] hover:text-4xl hover:text-indigo-100"
+          <div
+            className="absolute text-3xl left-[135px]   duration-300  cursor-pointer text-yellow-300 hover:rotate-[15deg] hover:text-4xl"
             onClick={() => setIsQuestionClicked(!isQuestionClicked)}
           >
             <FaQuestion />
-          </span>
+          </div>
           <p
             className={`${
               isQuestionClicked ? "block" : "hidden"
-            } w-32 p-2 absolute duration-300 text-xs -translate-y-[90px] translate-x-[160px]  rounded-2xl bg-slate-700 `}
+            } w-28  p-2 absolute duration-300 text-gray-900 text-xs -translate-y-[90px] translate-x-[160px]  rounded-2xl bg-yellow-300 `}
           >
             {useTranslation("Bio:whySnow")}
           </p>

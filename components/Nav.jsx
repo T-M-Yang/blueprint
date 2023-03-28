@@ -23,7 +23,7 @@ const Nav = () => {
   }, [router.events]);
 
   return (
-    <nav className="fixed bottom-0 xl:inset-y-[40%] xl:right-16">
+    <nav className="fixed bottom-0 flex w-full  justify-center xl:block xl:w-auto  xl:inset-y-[40%] xl:right-16">
       <div className="py-3 w-fit">
         <ul
           className={`${
@@ -81,7 +81,7 @@ const Nav = () => {
           <li className="relative group">
             <button
               className="absolute w-32 text-xs text-left duration-200 opacity-0 group-hover:opacity-70 -top-5"
-              disable={true}
+              disable={"true"}
             >
               Notes -{" "}
               <span className="italic font-sm text-slate-600">Developing</span>

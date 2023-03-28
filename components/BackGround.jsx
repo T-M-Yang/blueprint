@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 const BackGround = ({ children }) => {
   return (
     <div className="overflow-x-hidden">
-      <div className="grid place-items-center ">
+      <div className="">
         <div className="w-screen bg-slate-900 backdrop-blur-2xl text-slate-300">
           <div className="blur-3xl">
             <div className="fixed rounded-full w-96 h-96 opacity-40 top-15 blur-md mix-blend-multiply -left-4 bg-violet-700 animate-blob "></div>
@@ -18,8 +18,8 @@ const BackGround = ({ children }) => {
           <div className="max-w-5xl mx-auto">{children}</div>
         </div>
         <Nav />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
