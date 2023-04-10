@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { AiOutlineFolderOpen, AiOutlineFolder } from "react-icons/ai";
 import { CgNotes } from "react-icons/cg";
@@ -79,14 +78,12 @@ const Nav = () => {
             </Link>
           </li>
           <li className="relative group">
-            <button
-              className="absolute w-32 text-xs text-left duration-200 opacity-0 group-hover:opacity-70 -top-5"
-              disable={"true"}
-            >
-              Notes -{" "}
-              <span className="italic font-sm text-slate-600">Developing</span>
-            </button>
-            <CgNotes className="duration-300 cursor-not-allowed opacity-70 hover:opacity-100" />
+            <Link href={"https://medium.com/@snow-yang"} target="blank">
+              <button className="absolute w-32 text-xs text-left duration-200 opacity-0 group-hover:opacity-70 -top-5">
+                Notes
+              </button>
+              <CgNotes className="duration-300 cursor-pointer opacity-70 hover:opacity-100" />
+            </Link>
           </li>
         </ul>
       </div>

@@ -1,14 +1,14 @@
-import React from "react";
 import { FaReact } from "react-icons/fa";
 import {
   SiJavascript,
   SiTypescript,
   SiNextdotjs,
   SiTailwindcss,
+  SiRedux,
 } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 import { TbWorldWww } from "react-icons/tb";
-import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
+import { AiFillHtml5 } from "react-icons/ai";
 import { DiCss3Full } from "react-icons/di";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -37,6 +37,11 @@ const WebSystem = () => {
               <div className="absolute xl:text-[50px] xl:-top-[25px]  -top-[15px] text-sky-500 text-3xl animate-spainXLFast cursor-pointer">
                 <Link href="https://react.dev/">
                   <FaReact style={{ filter: "drop-shadow(0 0 10px)" }} />
+                </Link>
+              </div>
+              <div className="absolute xl:text-[30px] xl:-top-[30px]  -top-[25px] right-[110px] xl:right-[210px] text-indigo-500 text-xl animate-spainXLFast cursor-pointer">
+                <Link href="https://redux.js.org/">
+                  <SiRedux style={{ filter: "drop-shadow(0 0 10px)" }} />
                 </Link>
               </div>
 
